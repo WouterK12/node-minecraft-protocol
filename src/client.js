@@ -11,7 +11,7 @@ const createDeserializer = require('./transforms/serializer').createDeserializer
 const createCipher = require('./transforms/encryption').createCipher
 const createDecipher = require('./transforms/encryption').createDecipher
 
-const closeTimeout = 30 * 1000
+const closeTimeout = 5 * 1000
 
 class Client extends EventEmitter {
   constructor (isServer, version, customPackets, hideErrors = false) {
