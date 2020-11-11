@@ -15,7 +15,7 @@ function ping (options, cb) {
   options.majorVersion = version.majorVersion
   options.protocolVersion = version.version
   let closeTimer = null
-  options.closeTimeout = options.closeTimeout || 120 * 1000
+  options.closeTimeout = options.closeTimeout || 10 * 1000
   options.noPongTimeout = options.noPongTimeout || 5 * 1000
 
   const client = new Client(false, version.minecraftVersion)
